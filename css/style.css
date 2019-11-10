@@ -1,0 +1,377 @@
+/*
+Name: Taewon Kang
+*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #696969;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50px 300px 50px 300px 50px;
+    grid-template-rows: 50px 300px 50px repeat(3, 250px) 100px repeat(2, 300px) 50px;
+    grid-column-gap: 0px;
+    grid-row-gap: 5px;
+}
+
+.nav ul{
+    list-style-type: none;
+}
+  
+.nav li{
+    display: inline;
+    padding-right: 30px;
+}
+  
+.nav a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+  
+.nav a:hover{
+    text-decoration: underline;
+}
+
+.nav { 
+    grid-area: 1 / 1 / 2 / 6; 
+    background-color: black;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    text-align: right; 
+    vertical-align: middle;
+    color: white;
+}
+
+.heading-image{
+    grid-area: 2 / 1 / 3 / 3;
+    overflow: hidden;
+    border: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+header { 
+    grid-area: 2 / 3 / 3 / 6; 
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 1;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 50px;
+    color: white;
+}
+
+.about {
+    grid-area: 3 / 1 / 4 / 6;
+}
+
+h2 { 
+    padding-left: 50px;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;;
+}
+
+.about-image{ 
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.about-image img {
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+.about-image2 { 
+    grid-area: 4 / 4 / 5 / 5;    
+}
+
+.about-image2 img{ 
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+.about-image3 {
+    grid-area: 5 / 2 / 6 / 3; 
+}
+
+.about-image3 img{ 
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+.about-image4 {
+    grid-area: 5 / 4 / 6 / 5; 
+}
+
+.about-image4 img{ 
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+.about-paragraph { 
+    grid-area: 6 / 1 / 7 / 6; 
+}
+
+.work { 
+    grid-area: 7 / 1 / 8 / 6; 
+    padding-top: 60px;
+}
+
+.work-image { 
+    grid-area: 8 / 2 / 9 / 3; 
+}
+
+.work-image img {
+    max-width: 300px;
+    max-width: 300px; 
+    overflow: hidden;
+    padding-top: 40px;
+}
+
+.work-explain { 
+    grid-area: 8 / 3 / 9 / 6; 
+}
+
+.work-image2 { 
+    grid-area: 9 / 2 / 10 / 3;
+}
+
+.work-image2 img{ 
+    max-width: 300px;
+    max-width: 300px;
+    overflow: hidden; 
+    padding-top: 10px;
+}
+
+.work-explain2 { 
+    grid-area: 9 / 3 / 10 / 6; 
+}
+
+footer { 
+    grid-area: 10 / 1 / 11 / 6; 
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 800px) {
+    body{
+        background-color: #696969;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+    }
+    .nav ul{
+        list-style-type: none;
+    }
+      
+    .nav li{
+        display: inline;
+        padding-right: 30px;
+    }
+      
+    .nav a{
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+      
+    .nav a:hover{
+        text-decoration: underline;
+    }
+    
+    .nav { 
+        grid-area: 1 / 1 / 2 / 12; 
+        background-color: black;
+        padding-top: 20px; 
+        padding-bottom: 20px;
+        text-align: right; 
+        vertical-align: middle;
+        color: white;
+    }
+
+    .heading-image{
+        grid-area: 2 / 1 / 3 / 4;
+        overflow: hidden;
+        border: 2px solid whitexw;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+    
+    header { 
+        grid-area: 2 / 4 / 3 / 12; 
+    }
+    
+    h1 {
+        font-size: 40px;
+        line-height: 1;
+        padding-top: 10px;
+        text-align: center;
+        color: white;
+    }
+    
+    p {
+        font-size: 20px;
+        line-height: 1;
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-left: 50px;
+        color: white;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 50px 300px 20px 300px 25px 300px 20px 150px 100px;
+        grid-template-rows: 50px 300px 50px repeat(2, 300px) 50px repeat(2, 300px) 50px;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    
+    .about { 
+        grid-area: 3 / 1 / 4 / 12; 
+        margin-top: -10px;
+        padding-right: 5px;
+    }
+    
+    h2 { 
+        padding-left: 50px;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .about-image img { 
+        grid-area: 4 / 1 / 5 / 3; 
+    }
+    
+    .about-image img {
+        max-width: 300px;
+        max-height: 300px;
+        overflow: hidden;
+        border: 2px solid white;
+    }
+    
+    .about-image2 { 
+        grid-area: 4 / 4 / 5 / 5; 
+    }
+    
+    .about-image2 img{ 
+        max-width: 300px;
+        max-height: 300px;
+        overflow: hidden;
+        border: 2px solid white;
+    }
+    
+    .about-image3 { 
+        grid-area: 4 / 6 / 5 / 7; 
+    }
+    
+    .about-image3 img{ 
+        max-width: 300px;
+        max-height: 300px;
+        overflow: hidden;
+        border: 2px solid white;
+    }
+    
+    .about-image4 { 
+        grid-area: 4 / 8 / 5 / 12; 
+    }
+    
+    .about-image4 img{ 
+        max-width: 300px;
+        max-height: 300px;
+        overflow: hidden;
+        border: 2px solid white;
+    }
+    
+    .about-paragraph { 
+        grid-area: 5 / 1 / 6 / 12; 
+    }
+    
+    .work { 
+        grid-area: 6 / 1 / 7 / 12;
+        padding-top: 5px
+    }
+    
+    .work-image { 
+        grid-area: 7 / 1 / 8 / 4; 
+    }
+    
+    .work-image img {
+        max-width: 300px;
+        max-width: 300px; 
+        overflow: hidden;
+        padding-left: 50px;
+    }
+
+    .work-explain { 
+        grid-area: 7 / 4 / 8 / 12; 
+    }
+    
+    .work-image2 { 
+        grid-area: 8 / 1 / 9 / 4; 
+    }
+    
+    .work-image2 img{ 
+        max-width: 300px;
+        max-width: 300px;
+        overflow: hidden; 
+        padding-left: 50px;
+    }
+    
+    .work-explain2  { 
+        grid-area: 8 / 4 / 9 / 12; 
+    }
+    
+    footer { 
+        grid-area: 9 / 1 / 10 / 12;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    .skip a{
+        background: white;
+        left: 0;
+        padding: 6px;
+        position: absolute;
+        top: -40px;
+        -webkit-transition: ease;
+        transition: ease; 
+        z-index: 1;
+    }
+  
+    .skip a:focus{
+        top:0;
+    }
+}
